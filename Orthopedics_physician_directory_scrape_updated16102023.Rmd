@@ -399,8 +399,6 @@ all_cleaned_subseted_state_results <- clean_raw_data(data_tbl = all_raw_subseted
 # Save the result as csv file. Please create the folders as referenced below
 write_csv(all_cleaned_subseted_state_results, "data/csv/cleaned_data/alabama_cleaned_data.csv")
 
-# terminate the selenium server
-remDr$Close()
 ```
 
 The results are saved as comma separated files.
@@ -441,3 +439,13 @@ for (i in 1:nrow(aaos_state_and_practice_specialty_tbl[33:48,])) {
 
 
 You can repeat the process for all the states
+
+
+
+```{r}
+# terminate the selenium server
+remDr$close()
+```
+
+
+
