@@ -27,7 +27,7 @@ library(tidyverse)
 ```{r message=FALSE,warning=FALSE,results='hide'}
 # remote driver session
 rs_driver_object <- rsDriver(browser = 'chrome',
-                             chromever = "118.0.5993.70",
+                             chromever = "119.0.6045.105",
                              port = free_port(),
                              verbose = FALSE)
 
